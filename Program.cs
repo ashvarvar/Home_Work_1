@@ -1,20 +1,38 @@
-﻿// принимает два числа и выдаёт, какое число большее, а какое меньшее.
+﻿// принимает на вход три числа и выдаёт максимальное из этих чисел
        
-int a, b;
+ int n1, n2, n3;
  
-Console.WriteLine("Введите два числа : ");
+Console.WriteLine("Введите три числа : ");
 
-a = Convert.ToInt32(Console.ReadLine());
-b = Convert.ToInt32(Console.ReadLine());
- 
-    if (a > b)
-        {
-            Console.WriteLine($"наибольшее число {a}");
-            Console.WriteLine($"наименьшее число {b}");
-        }
-    else
-        {
-            Console.WriteLine($"наибольшее число {b}");
-            Console.WriteLine($"наименьшее число {a}");
-        }
- 
+n1 = Convert.ToInt32(Console.ReadLine());
+n2 = Convert.ToInt32(Console.ReadLine());
+n3 = Convert.ToInt32(Console.ReadLine());
+int max = n1; 
+        if (n2 > n1) 
+            {
+                max = n2;
+            }
+        else
+            {
+                max = n1;
+             }
+        if (n3 > n2)
+            {
+               max = n3;
+            }
+        else
+            {
+                max = n2;
+            }
+        if (n3 > n1)
+            {
+                max = n3;
+            }
+        else
+            {
+                max = n1;
+            }
+     
+Console.WriteLine($" наибольшее число {max}");
+
+    
